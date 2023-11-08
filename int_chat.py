@@ -23,7 +23,7 @@ def chat_wrt(req):
         #return text_done
 
 #chat('Какая сегодня дата')
-#voice_file.speek(chat('Кто президент Америки?'))
+#voice_file.speek(chat(''))
 
 
 
