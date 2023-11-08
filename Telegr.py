@@ -1,9 +1,9 @@
 import telebot
 
 def tele_list():
-    token='6533331762:AAHTH8lh2vl8WOYtFuKCs5HBmPXaIZeEFXY'
+    token='token'
     bot=telebot.TeleBot(token)
-    chat_id='1366665116'
+    chat_id='chatid'
     with open('to_do_new.txt', 'r') as f:
         file = f.read()
         #print(file)
@@ -11,7 +11,7 @@ def tele_list():
 
 
 def tele_rem(txt):
-    token = '6533331762:AAHTH8lh2vl8WOYtFuKCs5HBmPXaIZeEFXY'
+    token = 'token'
     bot = telebot.TeleBot(token)
-    chat_id = '1366665116'
+    chat_id = 'chaid'
     bot.send_message(chat_id, txt)
