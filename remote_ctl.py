@@ -6,7 +6,7 @@ import requests
 import json
 
 
-TOKEN = '6533331762:AAHTH8lh2vl8WOYtFuKCs5HBmPXaIZeEFXY'
+TOKEN = 'token'
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
@@ -51,44 +51,5 @@ async def get_text_message(msg: types.Message):
 
 if __name__=='__main__':
     executor.start_polling(dp, skip_updates=True)
-'''
-def remote_con():
 
-    TOKEN = '6533331762:AAHTH8lh2vl8WOYtFuKCs5HBmPXaIZeEFXY'
-    bot = Bot(token=TOKEN)
-    dp = Dispatcher(bot)
-
-    @dp.message_handler()
-    async def get_text_message(msg: types.Message):
-        # await msg.answer(msg.text)
-        if msg.text.lower() == 'привет':
-            await  msg.answer('Hello')
-
-        if msg.text.lower() == '1':
-            await  msg.answer('Hello_commrads')
-
-        if msg.text.lower() == 'лошадь':
-            await  msg.answer('Плотва')
-
-        if msg.text.lower() == 'vlc on':
-            await msg.answer('VLC ON')
-
-            def vlc_on():
-                subprocess.call('C:\\Program Files\\VideoLAN\\VLC\\vlc.exe http://mp3.amgradio.ru/DeepFM')
-            threading.Thread(target=vlc_on).start()
-
-        if msg.text.lower() == 'vlc off':
-            await msg.answer('VLC OFF')
-            def vlc_off():
-                os.system('taskkill /IM vlc.exe')
-            threading.Thread(target=vlc_off).start()
-
-        # else:
-        # await  msg.answer('Dont understend')
-
-    if __name__=='__main__':
-        executor.start_polling(dp, skip_updates=True)
-
-remote_con()
-'''
 
